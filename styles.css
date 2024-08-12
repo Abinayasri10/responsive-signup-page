@@ -1,0 +1,89 @@
+ body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('sp2.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .signup-container {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 2rem;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px; /* Increased width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .signup-container h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            text-align: center;
+            color: #333;
+        }
+        .signup-container .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .signup-container .form-group label {
+            font-weight: 600;
+            color: #555;
+        }
+        .signup-container .input-group {
+            width: 100%;
+        }
+        .signup-container .input-group-text {
+            background: #f1f1f1;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+        }
+        .signup-container .form-control {
+            border-radius: 0.375rem; /* Rounded corners */
+            border: 1px solid #ced4da;
+            padding: 0.75rem;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            width: calc(100% - 40px); /* Adjusted width to account for icon size */
+        }
+        .signup-container .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+        }
+        /* Enhanced button styles */
+        .signup-container .signup-btn {
+            border-radius: 0.375rem; /* Rounded corners */
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            border: none;
+            color: white;
+            font-size: 1.125rem;
+            padding: 0.75rem;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+        .signup-container .signup-btn:hover {
+            background: linear-gradient(135deg, #0056b3, #004494);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .signup-container .signup-btn:active {
+            background: linear-gradient(135deg, #004494, #003366);
+            transform: translateY(1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .signup-container .form-footer {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .signup-container .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .signup-container .form-footer a:hover {
+            text-decoration: underline;
+        }
